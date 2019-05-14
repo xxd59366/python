@@ -11,8 +11,10 @@ str8=astr.endswith('!')
 str9=astr.endswith('o', 3, 12)
 str10=astr.startswith('e', 1, 10)
 str11=astr.islower()
+######################
 str12=astr.isdigit()
 str13=astr.isalnum()
+######################
 str14=astr.upper()
 str15=astr.strip()
 str16=astr.lstrip()
@@ -25,4 +27,4 @@ str21='-'.join(['hello', 'world', '2018'])
 
 for i in range(2,22):
     b=eval('str%s' % i)
-    print(b)
+    print('%s %s' % (i ,b))
