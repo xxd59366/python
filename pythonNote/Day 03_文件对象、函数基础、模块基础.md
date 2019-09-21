@@ -588,6 +588,17 @@ def func2():
 if __name__ == '__main__':
     print(count_time(func1)())
     print(count_time(func2)())
+    print()
+    print(count_time(func2)())
+    print(func2())
+    
+# 输出
+1.0009052753448486
+2.0006353855133057
+
+2.0000879764556885
+7.002583265304565
+# 可以看出来，装饰器只调用子函数，而count_time(func1)()这种方式调用整个函数
 ```
 
 
@@ -701,9 +712,6 @@ module_test
 > 3. 改进程序，用户可以自己决定生成多少位的密码
 
 ```python
-# 初始版本
-
-# 改进后
 import random
 import string
 
