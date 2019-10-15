@@ -436,14 +436,16 @@ pstar(40)
 ### (1) 匿名函数
 
 + lambda
-  + lambda可以创造匿名函数，不需要以标注你的def方式来声明
+  + lambda可以创造匿名函数，不需要以标准的def方式来声明
   + 格式：lambda [arg1, arg2, ..., argN]: expression
   + 一个完整的lambda语句就是一个表达式，定义体必须和声明放在同一行
 + filter
+  + 用于过滤数据
   + 调用一个布尔函数来迭代遍历每个序列中的元素; 返回一个使函数返回值为true的元素的序列
   + 格式：filter(function, iterable)
   + 如果布尔函数比较简单，可以直接使用lambda匿名函数代替
 + map
+  + 用于加工数据
   + 接受一个函数和一个列表，使用函数依次加工列表中的每个元素，得到一个新的列表并返回
   + 格式：map(func, *iterables)
 
@@ -667,7 +669,17 @@ module_01.hi      module_01.pstar(
 ****************************************
 ```
 
+- 导入模块时，python将会到sys.path定义的路径下查找模块，如果查到则导入，否则报错
 
+```python
+>>> import sys
+>>> sys.path
+['D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.1.1\\helpers\\pydev', 'G:\\python\\pycharmContent', 'D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.1.1\\helpers\\third_party\\thriftpy', 'D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.1.1\\helpers\\pydev', 'D:\\pythonWinENV\\python-3.7.4-full\\python37.zip', 'D:\\pythonWinENV\\python-3.7.4-full\\DLLs', 'D:\\pythonWinENV\\python-3.7.4-full\\lib', 'D:\\pythonWinENV\\python-3.7.4-full', 'D:\\pythonWinENV\\python-3.7.4-full\\lib\\site-packages', 'G:\\python\\pycharmContent', 'G:/python/pycharmContent']
+```
+
+- 自己写的文件需要像标准模块一样能在任意位置导入，有以下几种方式：
+  - 将自己写的模块文件放到site-packages中
+  - 定义环境变量PYTHONPATH=/path/yourModules
 
 ### (2) 模块加载(load)
 
