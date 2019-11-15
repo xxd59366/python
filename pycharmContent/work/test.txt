@@ -1,0 +1,81 @@
+16:18:23.165862 IP (tos 0x0, ttl 255, id 48400, offset 0, flags [DF], proto TCP (6), length 60)
+    ip-172-31-11-185.cn-north-1.compute.internal.44202 > 124.251.77.227.http: Flags [S], cksum 0x82e5 (incorrect -> 0x2fd4), seq 4102930982, win 26883, options [mss 8961,sackOK,TS val 2999449773 ecr 0,nop,wscale 7], length 0
+16:18:23.169875 IP (tos 0x0, ttl 233, id 27257, offset 0, flags [DF], proto TCP (6), length 60)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44202: Flags [S.], cksum 0x7d1b (correct), seq 4238609926, ack 4102930983, win 4380, options [mss 1460,nop,nop,TS val 462095535 ecr 2999449773,sackOK,eol], length 0
+16:18:23.169898 IP (tos 0x0, ttl 255, id 48401, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44202 > 124.251.77.227.http: Flags [.], cksum 0x82dd (incorrect -> 0x50f3), seq 1, ack 1, win 26883, options [nop,nop,TS val 2999449777 ecr 462095535], length 0
+16:18:23.169935 IP (tos 0x0, ttl 255, id 48402, offset 0, flags [DF], proto TCP (6), length 653)
+    ip-172-31-11-185.cn-north-1.compute.internal.44202 > 124.251.77.227.http: Flags [P.], cksum 0x8536 (incorrect -> 0xa885), seq 1:602, ack 1, win 26883, options [nop,nop,TS val 2999449777 ecr 462095535], length 601: HTTP, length: 601
+    POST /submitdata/Service.asmx/g_Submit HTTP/1.0
+    Host:cf.lmobile.cn
+    Content-Type:application/x-www-form-urlencoded
+    Content-Length:444
+    Connection:close
+    
+    sname=dlqzkj00&spwd=quzheng201900&scorpid=&sprdid=1012888&sdst=18158512704&smsg=%E6%AC%A2%E8%BF%8E%E6%B3%A8%E5%86%8C%E5%85%A8%E6%B0%91%E5%8F%96%E8%AF%81%EF%BC%8C%E6%82%A8%E6%AD%A4%E6%AC%A1%E6%B3%A8%E5%86%8C%E7%9A%84%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%BA3256%EF%BC%8C%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%86%85%E6%9C%89%E6%95%88%EF%BC%8C%E8%AF%B7%E6%B3%A8%E6%84%8F%E4%BF%9D%E5%AF%86%E3%80%82%E3%80%90%E5%85%A8%E6%B0%91%E5%8F%96%E8%AF%81%E3%80%91[!http]
+16:18:23.173870 IP (tos 0x0, ttl 233, id 27259, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44202: Flags [.], cksum 0xa424 (correct), seq 1, ack 602, win 4981, options [nop,nop,TS val 462095539 ecr 2999449777], length 0
+16:18:23.177499 IP (tos 0x0, ttl 233, id 27262, offset 0, flags [DF], proto TCP (6), length 589)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44202: Flags [P.], cksum 0xacc9 (correct), seq 1:538, ack 602, win 4981, options [nop,nop,TS val 462095542 ecr 2999449777], length 537: HTTP, length: 537
+    HTTP/1.1 200 OK
+    Cache-Control: private, max-age=0
+    Content-Type: text/xml; charset=utf-8
+    Server: Microsoft-IIS/8.5
+    X-Powered-By: ASP.NET
+    Date: Wed, 30 Oct 2019 08:18:25 GMT
+    Connection: close
+    Content-Length: 317
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <CSubmitState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/">
+      <State>0</State>
+      <MsgID>1910301618269659132</MsgID>
+16:18:23.177513 IP (tos 0x0, ttl 255, id 48403, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44202 > 124.251.77.227.http: Flags [.], cksum 0x82dd (incorrect -> 0x4861), seq 602, ack 538, win 27924, options [nop,nop,TS val 2999449785 ecr 462095542], length 0
+16:18:23.177520 IP (tos 0x0, ttl 233, id 27264, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44202: Flags [F.], cksum 0xa207 (correct), seq 538, ack 602, win 4981, options [nop,nop,TS val 462095542 ecr 2999449777], length 0
+16:18:23.177632 IP (tos 0x0, ttl 255, id 48404, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44202 > 124.251.77.227.http: Flags [F.], cksum 0x82dd (incorrect -> 0x485f), seq 602, ack 539, win 27924, options [nop,nop,TS val 2999449785 ecr 462095542], length 0
+16:18:23.181528 IP (tos 0x0, ttl 233, id 27265, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44202: Flags [.], cksum 0xa1f9 (correct), seq 539, ack 603, win 4981, options [nop,nop,TS val 462095547 ecr 2999449785], length 0
+16:20:04.339552 IP (tos 0x0, ttl 255, id 4893, offset 0, flags [DF], proto TCP (6), length 60)
+    ip-172-31-11-185.cn-north-1.compute.internal.44214 > 124.251.77.227.http: Flags [S], cksum 0x82e5 (incorrect -> 0xfe5c), seq 1808855321, win 26883, options [mss 8961,sackOK,TS val 2999550945 ecr 0,nop,wscale 7], length 0
+16:20:04.343819 IP (tos 0x0, ttl 233, id 19355, offset 0, flags [DF], proto TCP (6), length 60)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44214: Flags [S.], cksum 0xe287 (correct), seq 872985739, ack 1808855322, win 4380, options [mss 1460,nop,nop,TS val 462196705 ecr 2999550945,sackOK,eol], length 0
+16:20:04.343846 IP (tos 0x0, ttl 255, id 4894, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44214 > 124.251.77.227.http: Flags [.], cksum 0x82dd (incorrect -> 0xb65f), seq 1, ack 1, win 26883, options [nop,nop,TS val 2999550949 ecr 462196705], length 0
+16:20:04.343882 IP (tos 0x0, ttl 255, id 4895, offset 0, flags [DF], proto TCP (6), length 653)
+    ip-172-31-11-185.cn-north-1.compute.internal.44214 > 124.251.77.227.http: Flags [P.], cksum 0x8536 (incorrect -> 0x0ce8), seq 1:602, ack 1, win 26883, options [nop,nop,TS val 2999550950 ecr 462196705], length 601: HTTP, length: 601
+    POST /submitdata/Service.asmx/g_Submit HTTP/1.0
+    Host:cf.lmobile.cn
+    Content-Type:application/x-www-form-urlencoded
+    Content-Length:444
+    Connection:close
+    
+    sname=dlqzkj00&spwd=quzheng201900&scorpid=&sprdid=1012888&sdst=18158512704&smsg=%E6%AC%A2%E8%BF%8E%E6%B3%A8%E5%86%8C%E5%85%A8%E6%B0%91%E5%8F%96%E8%AF%81%EF%BC%8C%E6%82%A8%E6%AD%A4%E6%AC%A1%E6%B3%A8%E5%86%8C%E7%9A%84%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%BA8918%EF%BC%8C%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%86%85%E6%9C%89%E6%95%88%EF%BC%8C%E8%AF%B7%E6%B3%A8%E6%84%8F%E4%BF%9D%E5%AF%86%E3%80%82%E3%80%90%E5%85%A8%E6%B0%91%E5%8F%96%E8%AF%81%E3%80%91[!http]
+16:20:04.347980 IP (tos 0x0, ttl 233, id 19361, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44214: Flags [.], cksum 0x0990 (correct), seq 1, ack 602, win 4981, options [nop,nop,TS val 462196709 ecr 2999550950], length 0
+16:20:04.350873 IP (tos 0x0, ttl 233, id 19364, offset 0, flags [DF], proto TCP (6), length 589)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44214: Flags [P.], cksum 0x1c3f (correct), seq 1:538, ack 602, win 4981, options [nop,nop,TS val 462196712 ecr 2999550950], length 537: HTTP, length: 537
+    HTTP/1.1 200 OK
+    Cache-Control: private, max-age=0
+    Content-Type: text/xml; charset=utf-8
+    Server: Microsoft-IIS/8.5
+    X-Powered-By: ASP.NET
+    Date: Wed, 30 Oct 2019 08:20:03 GMT
+    Connection: close
+    Content-Length: 317
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <CSubmitState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/">
+      <State>0</State>
+      <MsgID>1910301620046977431</MsgID>
+16:20:04.350890 IP (tos 0x0, ttl 255, id 4896, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44214 > 124.251.77.227.http: Flags [.], cksum 0x82dd (incorrect -> 0xadcd), seq 602, ack 538, win 27924, options [nop,nop,TS val 2999550957 ecr 462196712], length 0
+16:20:04.350896 IP (tos 0x0, ttl 233, id 19366, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44214: Flags [F.], cksum 0x0773 (correct), seq 538, ack 602, win 4981, options [nop,nop,TS val 462196712 ecr 2999550950], length 0
+16:20:04.350926 IP (tos 0x0, ttl 255, id 4897, offset 0, flags [DF], proto TCP (6), length 52)
+    ip-172-31-11-185.cn-north-1.compute.internal.44214 > 124.251.77.227.http: Flags [F.], cksum 0x82dd (incorrect -> 0xadcb), seq 602, ack 539, win 27924, options [nop,nop,TS val 2999550957 ecr 462196712], length 0
+16:20:04.354969 IP (tos 0x0, ttl 233, id 19367, offset 0, flags [DF], proto TCP (6), length 52)
+    124.251.77.227.http > ip-172-31-11-185.cn-north-1.compute.internal.44214: Flags [.], cksum 0x0767 (correct), seq 539, ack 603, win 4981, options [nop,nop,TS val 462196716 ecr 2999550957], length 0
+
