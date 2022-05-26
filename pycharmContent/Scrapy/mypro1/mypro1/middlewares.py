@@ -101,12 +101,3 @@ class Mypro1DownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
-
-import base64
-class ProxyMiddleware(object):
-    def process_request(self,request,spider):
-        proxy = "127.0.0.1:10086"
-        # 设置代理的认证信息
-        # auth = base64.b64encode(bytes("USERNAME:PASSWORD", 'utf-8'))
-        # request.headers['Proxy-Authorization'] = b'Basic ' + auth
-        request.meta['proxy'] = 'http://' + proxy
